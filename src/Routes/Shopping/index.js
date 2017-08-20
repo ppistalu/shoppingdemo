@@ -10,7 +10,7 @@ class Shopping extends Component {
   	const {products} = this.props;
     return (
       <div>
-    <ShoppingBar button = "View your shopping cart"/> 
+      <ShoppingBar button = "View your shopping cart"/> 
       <Products products={ products }/>
       </div>
     );

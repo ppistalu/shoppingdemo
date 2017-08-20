@@ -39,13 +39,13 @@ class ProductItem extends React.Component {
     </CardMedia>
     <CardTitle title={products.name}  subtitle={"Price: "+products.price+" ct/pc"}/>
      {products.discount &&
-        <p style={{marginLeft:"40%",fontWeight: "bold"}}>
+        <p style={{marginLeft:"30%",fontWeight: "bold"}}>
           {products.discount + "!"}
         </p>
       }
           <div>
-      <p style={{marginLeft:"70%"}}>Quantity:</p>
-      <SelectField style={{width:"15%", marginLeft:"73%", display:"inline-block"}}
+      <p style={{marginLeft:"60%"}}>Quantity:</p>
+      <SelectField style={{width:"15%", marginLeft:"63%", display:"inline-block"}}
         value={this.state.value}
         onChange={this.handleChange}
         maxHeight={200}
@@ -53,7 +53,7 @@ class ProductItem extends React.Component {
         {items}
       </SelectField>
       </div>
-    <CardActions style={{marginLeft:"60%"}}>
+    <CardActions style={{marginLeft:"50%"}}>
       <FlatButton label="Add to cart" onClick={this.addToCart}/>
     </CardActions>
   </Card>
